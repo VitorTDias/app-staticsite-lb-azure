@@ -130,8 +130,8 @@ resource "azurerm_virtual_machine" "vm02" {
     }
 }
 
-resource "azurerm_public_ip" "lb" {
-    name                = "lb"
+resource "azurerm_public_ip" "lb-vitor" {
+    name                = "lb-vitor"
     location            = azurerm_resource_group.rg.location
     resource_group_name = azurerm_resource_group.rg.name
     allocation_method   = "Static"
