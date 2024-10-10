@@ -144,7 +144,7 @@ resource "azurerm_lb" "lb" {
     resource_group_name = azurerm_resource_group.rg.name
     frontend_ip_configuration {
         name                 = "lb"
-        public_ip_address_id = azurerm_public_ip.lb.id
+        public_ip_address_id = azurerm_public_ip.lb-vitor.id
     }
 }
 
